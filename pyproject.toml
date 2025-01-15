@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "fly-tcp-udp"
+version = "0.1.0"
+description = ""
+authors = ["Biraj <biraj.patel@getadapt.ai>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohttp = "^3.11.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
