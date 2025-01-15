@@ -71,3 +71,26 @@ For UDP server on fly.io, there are two important things to note:
    $ echo "biraj rocks" | nc -u -w 1 fly-http-and-udp.fly.dev 8080
    Received UDP: biraj rocks
    ```
+
+## View logs
+
+In the same directory as this app, run:
+
+```
+$ fly logs
+```
+
+Or you can view the logs on Grafana by going to the app's dashboard and clicking on _Log search_ on the left.
+
+## How to ssh into the app
+
+Make sure that a machine is **running** on fly.io.
+
+```
+$ fly ssh
+```
+
+## Misc
+
+- `fly-global-services` is a hostname in `/etc/hosts` file on the fly.io machine. You can check it by `ssh`ing into the machine.
+- A dedicated ipv4 costs $2 per month.
